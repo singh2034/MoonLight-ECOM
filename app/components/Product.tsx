@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 // react icons
-import { AiFillStar, AiOutlineHeart } from "react-icons/ai";
+import { AiFillStar, AiOutlineHeart, AiOutlineStar } from "react-icons/ai";
 // importing framer
 import { motion } from "framer-motion";
 // product images
@@ -56,6 +56,31 @@ const Product = () => {
                 />
               </motion.div>
             </div>
+          </div>
+          {/* Right Side */}
+          <div className="text-center">
+            <h2 className="text-4xl font-bold mb-5">WireLess Moonlamp</h2>
+            <div className="flex gap-1 text-yellow-400 justify-center items-center mb-5">
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiOutlineStar />
+              <span>(4.0)</span>
+            </div>
+            <div className="mb-5">
+              <span className="text-2xl mr-3 font-bold">₹2499/-</span>
+              <span className="text-gray-400 mr-3 line-through">₹4999/-</span>
+              <span className="text-xl text-red-500">50% off*</span>
+            </div>
+            <p className="font-bold text-left text-gray-500 mb-5 text-sm">
+              Product-Description : Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Consequatur corrupti ipsum alias iure fugit
+              voluptatum illo accusantium libero ab aliquid in voluptatibus
+              dolor tempora repudiandae illum beatae sapiente eveniet, error
+              quisquam voluptate. Cupiditate dolore animi qui pariatur quod
+              debitis expedita. Lorem ipsum dolor sit amet. Lorem, ipsum.
+            </p>
           </div>
         </div>
       </section>
