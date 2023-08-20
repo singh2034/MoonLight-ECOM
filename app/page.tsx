@@ -1,3 +1,5 @@
+import Contact from "./components/Contact";
+import FAQ from "./components/FAQ";
 import Featues from "./components/Featues";
 import Hero from "./components/Hero";
 import Parallax from "./components/Parallax";
@@ -11,9 +13,13 @@ const Home = async () => {
       <Hero />
       <Featues />
       <Parallax />
+      <>
       {products.map((product) => (
         <Product {...product} key={product.id} />
       ))}
+      </>
+      <FAQ />
+      <Contact />
     </>
   );
 };

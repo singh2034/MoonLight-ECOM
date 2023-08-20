@@ -10,7 +10,8 @@ export default function Hydration({ children }: { children: ReactNode }) {
   return (
     <>
       {isHydrated ? (
-        { children }
+        // Here was the error what I Did was I have typed a JS element without any div or react fragments that has given me the error of array error.
+        <>{children}</>
       ) : (
         <div className="h-screen flex items-center justify-center">
           <p className="text-secondary text-xl italic font-bold">

@@ -9,10 +9,10 @@ const Parallax = () => {
           <input
             type="email"
             className="outline-none ml-5 w-[200px] md:w-[400px]"
-            placeholder="Enter Your Email Address"
+            placeholder="Enter Your Email"
           />
           <div>
-            <button className="flex items-center py-[10px] px-[26px] rounded-[80px] font-semibold md:text-lg text-white bg-primary whitespace-nowrap flex-1 w-fit ">
+            <button className="flex items-center py-[5px] px-[10px] md:py-[10px] md:px-[26px] rounded-[8px] font-semibold md:text-lg  text-white bg-primary whitespace-nowrap flex-1 w-fit ">
               Subscribe
             </button>
           </div>

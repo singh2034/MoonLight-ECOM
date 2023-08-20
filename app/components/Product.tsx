@@ -33,7 +33,7 @@ const Product = ({
   };
   return (
     <>
-      <section className="py-20 ">
+      <section id="shop" className="py-20 ">
         <div className="w-[89%] m-auto max-w-[1400px] grid grid-cols-1 md:grid-cols-2 items-center gap-5">
           {/* LEFT SIDE */}
           <div className="flex gap-4 items-center">
@@ -94,7 +94,7 @@ const Product = ({
             </p>
             <div className="flex justify-center items-center gap-5">
               <AddToCartButton {...productData} />
-              <AddToWishListButton />
+              {/* <AddToWishListButton /> */}
             </div>
           </div>
         </div>
