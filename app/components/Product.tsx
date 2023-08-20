@@ -2,6 +2,9 @@
 // React and Next imports
 import { useState } from "react";
 import Image from "next/image";
+import AddToCartButton from "./UI/AddToCartButton";
+import AddToWishListButton from "./UI/AddToWishListButton";
+import { ProductType } from "@/types/productType";
 // react icons
 import { AiFillStar, AiOutlineHeart, AiOutlineStar } from "react-icons/ai";
 // importing framer
@@ -12,8 +15,16 @@ import image2 from "@/public/productimage2.jpeg";
 import image3 from "@/public/productimage3.jpeg";
 import image4 from "@/public/productimage4.jpeg";
 
-const Product = () => {
+const Product = ({
+  name,
+  image,
+  unit_amount,
+  id,
+  description,
+  quantity,
+}: ProductType) => {
   const [currentImage, setCurrentImage] = useState(0);
+  const productData = { name, image, unit_amount, id, description, quantity };
   const productImages = [image1, image2, image3, image4];
   // Image Animation
   const imageVarients = {
@@ -81,6 +92,10 @@ const Product = () => {
               quisquam voluptate. Cupiditate dolore animi qui pariatur quod
               debitis expedita. Lorem ipsum dolor sit amet. Lorem, ipsum.
             </p>
+            <div className="flex justify-center items-center gap-5">
+              <AddToCartButton {...productData} />
+              <AddToWishListButton />
+            </div>
           </div>
         </div>
       </section>
